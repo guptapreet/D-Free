@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="265dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="344dp"
+        android:gravity="center"
+        android:hint="Enter Username"
+        android:inputType="text"
+        android:textColorHint="#393636"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="264dp"
+        android:gravity="center"
+        android:hint="Enter Mobile No."
+        android:inputType="text"
+        android:textColorHint="#393636"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edittext"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edittext"
+        app:layout_constraintTop_toBottomOf="@+id/edittext"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_wrapBehaviorInParent="vertical_only">
+
+    </EditText>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginLeft="236dp"
+        android:layout_marginTop="576dp"
+        app:cardBackgroundColor="#3F51B5"
+        app:cardCornerRadius="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginRight="204dp"
+        android:layout_marginBottom="576dp"
+        app:cardBackgroundColor="#3F51B5"
+        app:cardCornerRadius="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginRight="260dp"
+        app:cardBackgroundColor="#FFEB3B"
+        app:cardCornerRadius="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginBottom="200dp"
+        app:cardBackgroundColor="#FFEB3B"
+        app:cardCornerRadius="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintStart_toEndOf="@+id/cardView3" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Login"
+        app:backgroundTint="#CD1212"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/edittext2"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/edittext2"
+        app:layout_constraintTop_toBottomOf="@+id/edittext2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
